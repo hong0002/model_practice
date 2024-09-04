@@ -3,7 +3,7 @@ from torch import nn
 
 class ResNet(nn.Module):
     def __init__(self, block, layers, num_classes=1000):
-        super.__init__()
+        super().__init__()
 
         self.inplanes = 64
         self.stem = nn.Sequential(
